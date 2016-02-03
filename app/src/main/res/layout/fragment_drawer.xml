@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context="dhbk.android.nav_fab_phong.DrawerFragment">
+
+    <RelativeLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Material Design Example"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app"
+        android:layout_marginTop="30dp"
+        android:id="@+id/drawerList"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
